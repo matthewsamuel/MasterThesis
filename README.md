@@ -44,24 +44,24 @@ All experiments and simulations in the TSSAnalysis file are executed at the **Ge
 ```
 
 Requirements
-	-	Python 3.9+
-	-	Dask (for parallel computation)
-	-	NumPy, pandas, matplotlib
-	-	Jupyter Notebook
+-	Python 3.9+
+-	Dask (for parallel computation)
+-	NumPy, pandas, matplotlib
+-	Jupyter Notebook
 
 
 Usage
-	1.	Open one of the Jupyter Notebook files, depending on the chosen scenario:
-	  -	geohashLevel/mainGEO.ipynb → Scenario 1: GeoHash-level prediction and valuation
-	  -	eventLevel/mainEvent.ipynb → Scenario 2: Event-level prediction and valuation
-	2.	Set the number of Dask workers according to the available computing resources.
-	3.	Check and update input paths to ensure the correct location of datasets and configuration files.
-	4.	Configure key parameters in the notebook:
-	  -	empty_geohashes_to_predict: number of empty GeoHashes for which predictions will be made
-	  -	target_index: index of the target GeoHash within the sorted list (based on neighbor count)
-	5.	(Optional) If output results are to be saved:
-	  -	Create an Output/ directory manually if it does not yet exist
-	  -	The script will automatically save prediction results and Shapley valuations in CSV format in that folder
+1.	Open one of the Jupyter Notebook files, depending on the chosen scenario:
+-	geohashLevel/mainGEO.ipynb → Scenario 1: GeoHash-level prediction and valuation
+-	eventLevel/mainEvent.ipynb → Scenario 2: Event-level prediction and valuation
+2.	Set the number of Dask workers according to the available computing resources.
+3.	Check and update input paths to ensure the correct location of datasets and configuration files.
+4.	Configure key parameters in the notebook:
+-	empty_geohashes_to_predict: number of empty GeoHashes for which predictions will be made
+-	target_index: index of the target GeoHash within the sorted list (based on neighbor count)
+5.	(Optional) If output results are to be saved:
+-	Create an Output/ directory manually if it does not yet exist
+-	The script will automatically save prediction results and Shapley valuations in CSV format in that folder
 
 Once these steps are completed, the notebook will execute Kriging-based predictions and Shapley value computations in parallel using Dask. Optionally, it will generate plots for result interpretation.
 
