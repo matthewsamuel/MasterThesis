@@ -39,8 +39,8 @@ All experiments and simulations in the TSSAnalysis file are executed at the **Ge
 │   └── mainGEO.ipynb                        # Notebook to run geohash-level predictions and analysis
 │
 ├── Output/                                  # Needs to be added by user to store output csv's
-├── README.md                                # Project description and usage guide
-└── LICENSE                                   # Project license
+└── README.md                                # Project description and usage guide
+
 
 ```
 
